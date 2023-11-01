@@ -1,0 +1,53 @@
+@startuml
+
+
+
+
+Recursos_Bibliograficos : Titulo
+Recursos_Bibliograficos : Editorial
+Recursos_Bibliograficos : Autor
+
+
+
+Libros : Tipo
+
+
+
+Revistas : Volumen
+Revistas : Numero
+
+
+Periodicos : Fecha_de_publicacion
+Periodicos : Pagina_inicial
+
+Enciclopedias : año
+Enciclopedias : autor
+
+Diccionarios : idioma
+Diccionarios : autor
+
+Catalogos : marca
+Catalogos : modelo
+Catalogos : precio
+
+Dvds : Duracion
+Dvds : Genero
+Dvds : Precio
+
+
+class Libreria
+class Recursos_Bibliograficos
+
+Libreria ..> Recursos_Bibliograficos
+Recursos_Bibliograficos *-- Libros
+Recursos_Bibliograficos *-- Revistas
+Recursos_Bibliograficos *-- Periodicos
+Recursos_Bibliograficos *-- Enciclopedias
+Recursos_Bibliograficos *-- Diccionarios
+Recursos_Bibliograficos *-- Catalogos
+Recursos_Bibliograficos *-- Dvds
+
+
+@enduml
+
+
